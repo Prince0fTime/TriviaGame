@@ -20,6 +20,86 @@
 <body>
     <script type="text/javascript" src="assets/javascript/app.js">
     </script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://prince0ftime.github.io/Bootstrap-Portfolio/">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        My links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://github.com/Prince0fTime" target="_blank">My
+                              github</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/peter-winston-3a546b171/" target="_blank">My
+                              Linkedin</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://prince0ftime.github.io/RPG-GAME/">RPG-GAME</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://prince0ftime.github.io/Word-Guess-Game/">Word-Guess-Game</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>welcome to the trivia game</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button class="startButton btn btn-light">
+                    <h1>Start Game?</h1>
+                </button>
+                <h1 class="score">your score was: 0</h1>
+                <h1 class="CorrectA">Correct Answers: </h1>
+                <h1 class="IncorrectA">Incorrect Answers: </h1>
+                <h1 class="unA">unAnswered: </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="show-number" class="col-12 text-center">00</div>
+
+
+            <div class="col-6 question">
+
+            </div>
+
+            <div class="card border-1 col-6" style="width: 200rem;">
+                <div class="card-body text-center">
+                    <button id="As1" class="btn btn-light answer1" value=1>
+                    </button>
+                    <button id="As2" class="btn btn-light answer2" value=2>
+                    </button>
+                    <button id="As3" class="btn btn-light answer2" value=3>
+                    </button>
+                    <button id="As4" class="btn btn-light answer2" value=4>
+                    </button>
+
+
+                    <!-- <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+
+        </div>
+
+
+
 </body>
 
 </html>
