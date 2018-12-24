@@ -173,6 +173,22 @@ window.onload = function () {
 
     }
 
+    function reset() {
+        number = 21;
+        CorrectAnswers = 0;
+        IncorrectAnswers = 0;
+        unAnswered = 0;
+        questionsCount = 0;
+        $(".score").hide();
+        $(".CorrectA").text("Correct Answers: ");
+        $(".IncorrectA").text("Incorrect Answers: ");
+        $(".unA").text("unAnswered: ");
+
+
+
+
+    }
+
 
     function stop() {
 
@@ -187,6 +203,7 @@ window.onload = function () {
     $(".unA").hide();
 
     $(".startButton").click(function () {
+        reset();
         emptyALL();
         $(".startButton").hide();
         $(".CorrectA").show();
@@ -225,6 +242,8 @@ window.onload = function () {
             $(".score").show();
             if (CorrectAnswers != 0) {
                 $(".score").text("your score was: " + ((CorrectAnswers + 1) * 10));
+                $(".startButton").show();
+
             }
 
             stop();
@@ -257,6 +276,8 @@ window.onload = function () {
             $(".score").show();
             if (CorrectAnswers != 0) {
                 $(".score").text("your score was: " + ((CorrectAnswers + 1) * 10));
+                $(".startButton").show();
+
             }
             stop();
         }
